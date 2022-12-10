@@ -66,11 +66,10 @@ section.two {
  section.two div.image h1 {
     display: block;
     width: 250px;
+    margin-top: 16%;
     padding: 10px;
-    position: absolute;
-    top: 165%;
-    left: 50%;
     transform: translate(-50% , -50%);
+   
 }
 
 section.two div.image h1:hover {
