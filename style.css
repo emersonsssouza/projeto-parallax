@@ -63,12 +63,12 @@ section.two {
     width: 100vw;
 }
 
- div.image h1 {
-    display: flex;
+ section.two div.image h1 {
+    display: block;
     width: 250px;
     padding: 10px;
     position: absolute;
-    top: 135%;
+    top: 165%;
     left: 50%;
     transform: translate(-50% , -50%);
 }
