@@ -63,12 +63,11 @@ section.two {
     width: 100vw;
 }
 
-section.two div.image h1 {
+ div.image h1 {
     display: flex;
     width: 250px;
     padding: 10px;
     position: absolute;
-    margin-top: 15%;
     top: 135%;
     left: 50%;
     transform: translate(-50% , -50%);
@@ -116,6 +115,7 @@ section.three p {
 
 section.four {
     height: 500px;
+    width: 100vw;
     background-image: url(imagens/image3.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
