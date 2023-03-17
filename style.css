@@ -1,200 +1,189 @@
 @charset "utf-8";
-/* 
-Ordem e Decência
-
-*/
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    overflow: auto;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-div.one {
-    height: 800px;
-    background-image: url(imagens/imagem.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-div.one h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50% , -50%);
-    color: gold;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+main {
+  background-color: white;
 }
 
-div.one h1:hover {
-   border: 3px solid blue;
-   border-radius: 20px;
-   transition: 2s;
-   color: red;
-   box-shadow: 3px 3px 5px black;
+div.conteudo-principal {
+  height: 600px;
+  background-image: url(imagens/imagem.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-article.texto1 h1 {
-    text-align: center;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+div.conteudo-principal > h1 {
+  width: 300px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 5px 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-article.texto1 p {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 17px;
-    text-indent: 10px;
-    text-align: left;
+div.conteudo-principal > h1:hover {
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black;
 }
 
-section.two {
-    background-image: url(imagens/image2.jpg);
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 500px;
-    width: 100vw;
+article.conteudo-principal-secundario {
+  width: 97vw;
+  height: 100px;
+  margin: 10px 20px;
+  padding: 5px;
 }
 
- section.two div.image h1 {
-    display: block;
-    width: 250px;
-    margin-top: 16%;
-    padding: 10px;
-    transform: translate(-50% , -50%);
+article.conteudo-principal-secundario > h1 {
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
-section.two div.image h1:hover {
-    border: 3px solid white;
-    border-radius: 20px;
-    color: black;
-    background-image: linear-gradient(to bottom, red, green, yellow);
-    transition: 2s;
-    box-shadow: 2px 2px 7px black;
+article.conteudo-principal-secundario > p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 25px;
+  text-indent: 30px;
+  text-align: justify;
 }
 
-section.two h1{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: white;
+section.conteudo-secundario {
+  margin-top: 200px;
+  background-image: url(imagens/image2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  width: 100vw;
 }
 
-section.three {
-    width: 100vw;
+section.conteudo-secundario > div.conteudo-secundario-background {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
 }
 
-section.three h1 {
-    text-align: center;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+section.conteudo-secundario > div.conteudo-secundario-background > h1 {
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: red;
 }
 
-section.three p {
-    padding: 20px;
-    text-align: left;
-    text-indent: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 17px;
+section.conteudo-secundario div.conteudo-secundario-background h1:hover {
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 2px 2px 7px black;
 }
 
-section.four {
-    height: 500px;
-    width: 100vw;
-    background-image: url(imagens/image3.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+section.conteudo-terciario {
+  width: 97vw;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
 }
 
-section.four h1 {
-    position: absolute;
-    top: 312%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    padding: 10px;
-    color: white;
+section.conteudo-terciario > h1 {
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
-section.five {
-    width: 100vw;
+section.conteudo-terciario > p {
+  padding: 20px;
+  text-align: justify;
+  text-indent: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
 }
 
-section.five h1 {
-    text-align: center;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+section.conteudo-quartenario {
+  height: 500px;
+  width: 100vw;
+  background-image: url(imagens/image3.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-section.five p {
-    text-align: left;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 10px;
-    line-height: 17px;
-}
-    
-section.six {
-    background-image: url(imagens/imagem.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 600px;
+section.conteudo-final {
+  width: 97vw;
+  margin: 10px;
+  padding: 10px;
 }
 
-section.six h1 {
-    position: absolute;
-    top: 430%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
+section.conteudo-final > h1 {
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+section.conteudo-final > p {
+  text-align: justify;
+  text-indent: 30px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 30px;
+  line-height: 25px;
+}
+
+section.conteudo-final-secundario {
+  background-image: url(imagens/cidade.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 500px;
 }
 
 footer {
-    background-color: black;
-    width: 100vw;
+  background-color: black;
+  width: 100vw;
 }
 
-footer p {
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 10px 10px;
+footer > p {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 10px;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    cursor: pointer ;
-    color: gold;
+  text-decoration: underline;
+  cursor: pointer;
+  color: gold;
 }
